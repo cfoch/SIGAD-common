@@ -40,7 +40,7 @@ export MAVEN_OPTS="-client
   -XX:TieredStopAtLevel=1
   -Xverify:none"
 
-config_file=$git_repo_dir/guidelines/sun_checks.xml
+config_file=$git_repo_dir/common/sun_checks.xml
 includes=$(git diff --name-only --cached \*.java | cut -d'/' -f4- | xargs -I{} printf "**\/{},")
 
 mvn -pl "$modules_arg" checkstyle:check -Dcheckstyle.config.location=$config_file \
