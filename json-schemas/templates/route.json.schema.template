@@ -4,6 +4,6 @@
     "type": "array",
     "items": {
         "type": "object",
-        "$ref": "file://{%s}/location.json.schema"
+        "$ref": "file://%s/location.json.schema"
     }
 }
