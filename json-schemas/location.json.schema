@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "tipo": {
+      "type": "string",
+      "enum": ["DEPOSITO", "OTRO"],
+      "minLength": 1
+    },
+    "nombre": {
+      "type": "string",
+      "minLength": 1
+    },
+    "x": {
+      "type": "number"
+    },
+    "y": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "id",
+    "tipo",
+    "nombre",
+    "x",
+    "y"
+  ]
+}
